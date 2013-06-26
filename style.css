@@ -195,6 +195,7 @@ img {
 
 
 .icon {
+	display: block;
 	margin: 1em auto;
 	height: 0;
 	padding-bottom: 75%;
@@ -204,8 +205,6 @@ img {
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 }
-
-
 .icon.icon-mail {
 	background: url('images/icon-mail.png') #e3e3e3 no-repeat scroll center center / 50%;
 }
@@ -218,6 +217,10 @@ img {
 .icon.icon-harddrive {
 	background: url('images/icon-harddrive.png') #e3e3e3 no-repeat scroll center center / 50%;
 }
+.icon:hover {
+	background-color: #808080;
+}
+
 
 	/* -------------------- Layout */
 
