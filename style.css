@@ -119,6 +119,11 @@ h6 {
 }
 
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 
 	/* -------------------- Coloumns */
 
@@ -188,6 +193,32 @@ h6 {
 }
 
 
+
+.icon {
+	margin: 1em auto;
+	height: 0;
+	padding-bottom: 75%;
+	
+	text-align: center;
+	
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+.icon.icon-mail {
+	background: url('images/icon-mail.png') #e3e3e3 no-repeat scroll center center / 50%;
+}
+.icon.icon-message {
+	background: url('images/icon-message.png') #e3e3e3 no-repeat scroll center center / 50%;
+}
+.icon.icon-browser {
+	background: url('images/icon-browser.png') #e3e3e3 no-repeat scroll center center / 50%;
+}
+.icon.icon-harddrive {
+	background: url('images/icon-harddrive.png') #e3e3e3 no-repeat scroll center center / 50%;
+}
+
 	/* -------------------- Layout */
 
 .inner {
@@ -211,11 +242,13 @@ h6 {
 	background: url('images/header-border.png') transparent repeat-x scroll center center;
 }
 #header {
+	margin: 2em auto;
 }
 #intro-outer {
 	position: relative;
 }
 #intro {
+	margin: 2em auto;
 }
 
 
