@@ -72,3 +72,152 @@ a:hover {}
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after, .clear { clear: both; }
 .clearfix { zoom: 1; }
+
+
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
+
+
+
+body, input, select, textarea {
+	font-family: 'PT Sans','Helvetica Neue','Arial',Sans-Serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.5em;
+	vertical-align: baseline;
+	color: #808080;
+}
+
+	/* -------------------- Headlines */
+
+h1, h2, h3, h4, h5, h6, h7 {
+	font-family: 'Roboto Slab', 'PT Sans','Helvetica Neue','Arial',Sans-Serif;
+	font-weight: 400;
+	line-height: 1.25em;
+	margin: 1.5em 0;
+	color: #595959;
+}
+
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.75em;
+}
+h3 {
+	font-size: 1.625em;
+}
+h4 {
+	font-size: 1.25em;
+}
+h5 {
+	font-size: 1.125em;
+}
+h6 {
+	font-size: 1em;
+}
+
+
+
+	/* -------------------- Coloumns */
+
+.two-columns-one {
+	width: 48%;
+}
+.three-columns-one {
+	width: 30.6667%;
+}
+.three-columns-two {
+	width: 65.333%;
+}
+.four-columns-one {
+	width: 22%;
+}
+.four-columns-two {
+	width: 44%;
+}
+.four-columns-three {
+	width: 74%;
+}
+.two-columns-one, .three-columns-one, .three-columns-two, .four-columns-one, .four-columns-two, .four-columns-three {
+	float: left;
+	margin-bottom: 0;
+	margin-right: 4%;
+	position: relative;
+}
+.last {
+	clear: right;
+	margin-right: 0;
+}
+.divider {
+	clear: both;
+	display: block;
+	margin-bottom: 1.5em;
+	padding-top: 1.5em;
+	width: 100%;
+}
+
+
+	/* -------------------- Section Title */
+
+
+.title, .title-border, .title-sub {
+	display: block;
+	text-align: center;
+	margin: 1em;
+}
+
+.title {
+	font-size: 3em;
+}
+.title-border {
+	color: #bfbfbf;
+	font-size: 2em;
+}
+.title-sub {}
+
+#header .title {
+	color: #fff;
+}
+#header .title-border {
+	color: #5ce6b8;
+}
+#header .title-sub {
+	color: #99ffdd;
+}
+
+
+	/* -------------------- Layout */
+
+.inner {
+	max-width: 48em;
+	padding: 2em;
+	margin: auto;
+}
+
+#header-outer {
+	position: relative;
+	background: #3dcc9c;
+	padding-bottom: 120px;
+	margin-bottom: 120px;
+}
+#header-outer:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 240px;
+	bottom: -120px;
+	background: url('images/header-border.png') transparent repeat-x scroll center center;
+}
+#header {
+}
+#intro-outer {
+	position: relative;
+}
+#intro {
+}
+
+
+
+
