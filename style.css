@@ -225,7 +225,7 @@ img {
 	/* -------------------- Layout */
 
 .inner {
-	max-width: 48em;
+	max-width: 60em;
 	padding: 2em;
 	margin: auto;
 }
