@@ -226,6 +226,17 @@ p {
 	color: #99ffdd;
 }
 
+#content-5 .title {
+	color: #fff;
+}
+#content-5 .title-border {
+	color: #808080;
+}
+#content-5 .title-sub {
+	color: #bfbfbf;
+}
+
+
 
 
 .icon {
@@ -278,13 +289,13 @@ p {
 	bottom: -120px;
 	background: url('images/header-border.png') transparent repeat-x scroll center center;
 }
-#header {
+#header header {
 	margin: 2em auto;
 }
-#intro-outer {
+#content-5 header {
 	position: relative;
 }
-#intro {
+#content-0 header {
 	margin: 2em auto;
 }
 
@@ -292,12 +303,17 @@ p {
 #content-1-outer {
 	background: #f4f4f4;
 }
+
 #content-2-outer {}
 
 #content-3-outer {
 	background: #f4f4f4;
 }
+
 #content-4-outer {}
 
+#content-5-outer {
+	background: #404040;
+}
 
 
