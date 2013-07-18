@@ -14,5 +14,24 @@ $(document).ready(function(){
 		}
 		$('.content-border').text(text);
 	}
-	setInterval(changeItem, 50);
+
+	var border = $('.content-border-1');
+	var borderOffset = border.offset();
+	var borderHeight = border.height();	
+	var borderY = borderOffset.top + borderHeight / 2;	
+	var doc = $(window);
+	$(window).scroll(function() {
+		var docHeight = doc.height() / 2;
+		var docY = doc.scrollTop() + docHeight;
+		
+		var coco = borderY - docY;
+		coco = Math.round(coco);
+		coco = Math.abs(coco);
+		
+		coco = coco * coco;
+		console.log(coco);
+
+		changeItem();
+	});
+	
 });
