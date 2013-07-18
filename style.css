@@ -129,7 +129,7 @@ p {
 	margin: 1.5em 0;
 }
 
-
+.arrow,
 .button,
 .button:active,
 .button:visited {
@@ -137,7 +137,7 @@ p {
 	position: relative;
 	display: block;
 	padding: 1em 2.125em 1em 1em;
-	margin: 1em 1.5em 1em 0;
+	margin: 1em 0;
 	
 	color: #fff;
 	background: #3dcc9c;
@@ -145,7 +145,13 @@ p {
 	-webkit-border-radius: 0.25em 0.5em 0.5em 0.25em;
 	border-radius: 0.25em 0.5em 0.5em 0.25em;
 }
-.button:before {
+.arrow {
+	margin: 1em 1.5em 1em 0;
+}
+.arrow.button {
+	background: #404040;
+}
+.arrow:before {
 	width: 2.25em;
 	height: 2.25em;
 	position: absolute;
@@ -154,7 +160,6 @@ p {
 	content: '';
 	display: block;
 	margin: -1.125em 0 0;
-
 	background: #3dcc9c;
 
 	-webkit-border-radius: 0.5em 0.25em 0.5em 0.25em;
@@ -163,7 +168,10 @@ p {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-.button:after {
+.arrow.button:before {
+	background: #404040;
+}
+.arrow:after {
 	font-size: 1em;
 	position: absolute;
 	right: -0.5em;
@@ -227,8 +235,14 @@ p {
 	margin: 1em;
 }
 
-.title {
+h1.title {
+	font-size: 4em;
+}
+h2.title {
 	font-size: 3em;
+}
+h3.title {
+	font-size: 2em;
 }
 .title-border {
 	color: #bfbfbf;
