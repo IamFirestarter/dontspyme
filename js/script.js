@@ -9,29 +9,12 @@ $(document).ready(function(){
 	function changeItem() {
 		var text = '';
 		var possible = '01 ';
+		var possible = 'AB CD EF 01 23 45 67 89 ';
+
 		for(var i = 0; i < 1000; i++) {
 			text += possible.charAt(Math.floor(Math.random() * possible.length));
 		}
 		$('.content-border').text(text);
 	}
-
-	var border = $('.content-border-1');
-	var borderOffset = border.offset();
-	var borderHeight = border.height();	
-	var borderY = borderOffset.top + borderHeight / 2;	
-	var doc = $(window);
-	$(window).scroll(function() {
-		var docHeight = doc.height() / 2;
-		var docY = doc.scrollTop() + docHeight;
-		
-		var coco = borderY - docY;
-		coco = Math.round(coco);
-		coco = Math.abs(coco);
-		
-		coco = coco * coco;
-		console.log(coco);
-
-		changeItem();
-	});
-	
+	setInterval(changeItem, 100);
 });
