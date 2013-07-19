@@ -130,6 +130,18 @@ p {
 	margin: 1.5em 0;
 }
 
+code {
+	color: #3dcc9c;
+	letter-spacing: 0.0625em;
+	padding: 0.125em 0.25em;
+	background: rgba(0,0,0,0.2);
+	border: 1px solid rgba(255,255,255,0.2);
+	
+	-webkit-border-radius: 0.25em;
+	border-radius: 0.25em;
+}
+
+
 .arrow,
 .button,
 .button:active,
@@ -264,7 +276,7 @@ h3.title {
 	color: #bfbfbf;
 	margin-bottom: -2em;
 
-	letter-spacing: 1px;
+	letter-spacing: 0.0625em;
 	text-transform: uppercase;
 }
 
@@ -280,6 +292,9 @@ h3.title {
 	color: #99ffdd;
 }
 
+#content-5 {
+	color: #e3e3e3;
+}
 #content-5 .title {
 	color: #fff;
 }
@@ -289,8 +304,10 @@ h3.title {
 #content-5 .title-sub {
 	color: #bfbfbf;
 }
-
-
+#content-5 h3,
+#content-5 h4 {
+	color: #fff;
+}
 
 
 .icon {
@@ -301,8 +318,8 @@ h3.title {
 	
 	text-align: center;
 	
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 0.25em;
+	border-radius: 0.25em;
 	
 	background: #3dcc9c no-repeat scroll center center / 50%;
 }
@@ -402,7 +419,17 @@ h3.title {
 	color: #e3e3e3;
 	
 	overflow: hidden;
+	cursor: default;
+	
+	-webkit-transition: all 3.333s;
+	transition: all 3.333s;
 }
+.content-border:hover,
+.content-border:focus {
+	font-size: 1.5em;
+	color: #f4f4f4;
+}
+
 #intro-outer {
 	position: relative;
 }

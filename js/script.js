@@ -6,15 +6,15 @@ $(document).ready(function(){
 		return false;
 	});
 	
-	function changeItem() {
+	function changeBorder() {
 		var text = '';
-		var possible = '01 ';
+		//var possible = '01 ';
 		var possible = 'AB CD EF 01 23 45 67 89 ';
 
-		for(var i = 0; i < 1000; i++) {
+		for(var i = 0; i < 1500; i++) {
 			text += possible.charAt(Math.floor(Math.random() * possible.length));
 		}
 		$('.content-border').text(text);
 	}
-	setInterval(changeItem, 100);
+	setInterval(changeBorder, 50);
 });
