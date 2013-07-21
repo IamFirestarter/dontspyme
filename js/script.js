@@ -10,12 +10,12 @@ $(document).ready(function(){
 		//var possible = '01 ';
 		var possible = 'AB CD EF 01 23 45 67 89 ';
 
-		for(var i = 0; i < 8000; i++) {
+		for(var i = 0; i < 2000; i++) {
 			text += possible.charAt(Math.floor(Math.random() * possible.length));
 		}
 		$('.content-border').text(text);
 	}
-	setInterval(changeBorder, 50);
+	setInterval(changeBorder, 100);
 /* 	$(window).scroll(changeBorder) */
 	
 /*
