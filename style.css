@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
@@ -9,7 +12,6 @@ footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-* {outline: 0;}
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none; }
@@ -72,12 +74,6 @@ a:hover {}
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after, .clear { clear: both; }
 .clearfix { zoom: 1; }
-
-
-
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
-
 
 
 body, input, select, textarea {
@@ -199,6 +195,68 @@ code {
 .button:focus:before {
 	background: #595959;
 }
+
+
+
+.hexagon {
+	display: block;
+	width: 100%;
+	height: 0;
+	padding: 0 0 60%;
+	margin: 40% 0;
+	background: #404040;
+	position: relative;
+	
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+.hexagon:before,
+.hexagon:after {
+	content: '';
+	position: absolute;
+	width: 57%;
+	height: 95%;
+	left: 50%;
+	background: #404040;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-webkit-transform-origin: 0 0 0;
+	transform-origin: 0 0 0;
+	-webkit-transform: rotate(45deg) skew(-13deg, -13deg);
+	transform: rotate(45deg) skew(-13deg, -13deg);
+	z-index: -1;
+}
+.hexagon:before {
+	top: -50.333%;
+}
+.hexagon:after {
+	bottom: -42%;
+}
+.hexagon-inner {
+	display: block;
+	position: absolute;
+	width: 70%;
+	height: 116%;
+	left: 15%;
+	top: -8%;
+
+	z-index: 2;
+}
+
+.adium,
+.pidgin {
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 75%;
+}
+.adium {
+	background-image: url('images/logo-adium.png');
+}
+.pidgin {
+	background-image: url('images/logo-pidgin.png');
+}
+
 
 	/* -------------------- Coloumns */
 
@@ -465,21 +523,21 @@ h3.title {
 
 
 @media only screen and (max-width: 720px)  {
-.two-columns-one,
-.three-columns-one,
-.three-columns-two,
-.four-columns-one,
-.four-columns-two,
-.four-columns-three {
-	width: auto;
-	float: none;
-	margin-bottom: 2em;
-	margin-right: 0;
-}
-.divider {
-	margin-bottom: 1em;
-	padding-top: 1em;
-}
+	.two-columns-one,
+	.three-columns-one,
+	.three-columns-two,
+	.four-columns-one,
+	.four-columns-two,
+	.four-columns-three {
+		width: auto;
+		float: none;
+		margin-bottom: 2em;
+		margin-right: 0;
+	}
+	.divider {
+		margin-bottom: 1em;
+		padding-top: 1em;
+	}
 }
 
 	/* ------------------------------ Retina Graphics */
