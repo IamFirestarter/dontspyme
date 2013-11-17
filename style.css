@@ -63,6 +63,7 @@ a {
 	text-decoration: none;
 }
 img {
+	display: block;
 	max-width: 100%;
 	height: auto;
 	margin: 1em auto;
@@ -83,10 +84,10 @@ code {
 	border-radius: 0.25em;
 }
 
-.image-small,
-.image-medium,
+.image-small {}
+.image-medium {}
 .image-large {
-	display: block;
+	margin: 0 -2em;
 }
 
 
@@ -111,7 +112,7 @@ code {
 	margin: 1em 1.6em 1em 0;
 }
 .arrow.button {
-	background: #404040;
+	background: #cc0044;
 }
 .arrow:before {
 	width: 2.8em;
@@ -131,7 +132,7 @@ code {
 	transform: rotate(45deg);
 }
 .arrow.button:before {
-	background: #404040;
+	background: #cc0044;
 }
 .arrow:after {
 	font-size: 1em;
@@ -146,7 +147,7 @@ code {
 .button:focus,
 .button:hover:before,
 .button:focus:before {
-	background: #595959;
+	background: #990033;
 }
 
 	/* -------------------- Coloumns */
@@ -191,7 +192,15 @@ code {
 	/* -------------------- Section Title */
 
 .header {
-	margin: 0 auto 5em;
+	margin: 0 auto 2em;
+}
+.header h3.title {
+	padding: 1em 0;
+	margin-left: -2em;
+	margin-right: -2em; 
+	background: #f4f4f4;
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
 }
 .title, .title-border, .title-sub {
 	display: block;
@@ -202,12 +211,12 @@ code {
 h1.title {
 	font-size: 3em;
 	line-height: 1.2em;
-	margin: 0.5em;
+	margin: 0.5em auto;
 }
 h2.title {
-	font-size: 1.8em;
+	font-size: 2em;
 	line-height: 1.2em;
-	margin: 0.5em;
+	margin: 0.5em auto;
 }
 h3.title {
 	font-size: 1.4em;
@@ -446,8 +455,11 @@ body {}
 	.title-sub {
 		width: auto;
 	}
-	.image-small {
+	.image-small img {
 		max-width: 50%;
+	}
+	.image-large {
+		margin: 0 auto;
 	}
 }
 
