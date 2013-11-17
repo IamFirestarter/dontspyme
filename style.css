@@ -149,68 +149,6 @@ code {
 	background: #595959;
 }
 
-
-
-.hexagon {
-	display: block;
-	width: 100%;
-	height: 0;
-	padding: 0 0 60%;
-	margin: 40% 0;
-	background: #404040;
-	position: relative;
-	
-	-webkit-border-radius: 0.5em;
-	border-radius: 0.5em;
-}
-.hexagon:before,
-.hexagon:after {
-	content: '';
-	position: absolute;
-	width: 57%;
-	height: 95%;
-	left: 50%;
-	background: #404040;
-	-webkit-border-radius: 0.5em;
-	border-radius: 0.5em;
-	-webkit-transform-origin: 0 0 0;
-	transform-origin: 0 0 0;
-	-webkit-transform: rotate(45deg) skew(-13deg, -13deg);
-	transform: rotate(45deg) skew(-13deg, -13deg);
-	z-index: -1;
-}
-.hexagon:before {
-	top: -48.4%;
-}
-.hexagon:after {
-	bottom: -39.8%;
-}
-.hexagon-inner {
-	display: block;
-	position: absolute;
-	width: 70%;
-	height: 116%;
-	left: 15%;
-	top: -8%;
-
-	z-index: 2;
-}
-
-.adium,
-.pidgin {
-	background-attachment: scroll;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: auto 75%;
-}
-.adium {
-	background-image: url('images/logo-adium.png');
-}
-.pidgin {
-	background-image: url('images/logo-pidgin.png');
-}
-
-
 	/* -------------------- Coloumns */
 
 .two-columns-one {
