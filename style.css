@@ -274,7 +274,7 @@ h3.title {
 .title-sub {
 	color: #808080;
 	width: 62.5%;
-	margin: 0 auto;
+	margin: 0 auto 1em;
 }
 
 .pre-head {
@@ -419,14 +419,13 @@ body {}
 #footer-inner {
 	padding: 1em 0;
 }
+#footer {
+	font-size: 0.8em;
+	color: #404040;
+}
 #footer a {
-	color: #fff !important;
-	font-size: 1em;
-	padding: 0.5em 0;
-	text-align: center;
-	font-family: 'Arial Black',Arial,sans-serif;
-	font-weight: 900;
-	text-transform: uppercase;
+	color: #808080 !important;
+	text-decoration: none;
 }
 
 
