@@ -1,70 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after { content: ''; content: none; }
-ins { background-color: #ff9; color: #000; text-decoration: none; }
-mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
-del { text-decoration: line-through; }
-abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
-table { border-collapse: collapse; border-spacing: 0; }
-hr { display: block; height: 1px; border: 0; margin: 1em 0; padding: 0; }
-input, select { vertical-align: middle; }
-
-body { font-family: sans-serif; *font-size:small; } 
-select, input, textarea, button { font-family: sans-serif; }
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
-
-html { overflow-y: scroll; }
-a:hover, a:active { outline: none; }
-ul, ol { margin-left: 0; }
-ol { list-style-type: decimal; }
-nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
-small { font-size: 85%; }
-strong, th { font-weight: bold; }
-td { vertical-align: top; }
-
-sub, sup { font-size: 75%; line-height: 0; position: relative; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
-textarea { overflow: auto; }
-.ie6 legend, .ie7 legend { margin-left: -7px; } 
-input[type="radio"] { vertical-align: middle; }
-input[type="checkbox"] { vertical-align: middle; }
-.ie7 input[type="checkbox"] { vertical-align: baseline; }
-.ie6 input { vertical-align: text-bottom; }
-label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
-button, input, select, textarea { margin: 0; }
-input:valid, textarea:valid   {  }
-input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
-.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
-
-::-moz-selection{ background: rgba(0,0,0,0.5); color:#fff; text-shadow: none; }
-::selection { background: rgba(0,0,0,0.5); color:#fff; text-shadow: none; }
-a:link { -webkit-tap-highlight-color: rrgba(0,0,0,0.5); }
-
-button {  width: auto; overflow: visible; }
-.ie7 img { -ms-interpolation-mode: bicubic; }
-
-body, select, input, textarea {  color: #444; }
-h1, h2, h3, h4, h5, h6, h7 {}
-a, a:active, a:visited { color: inherit; text-decoration: none;}
-a:hover {}
-
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
@@ -76,11 +12,15 @@ a:hover {}
 .clearfix { zoom: 1; }
 
 
+html {
+	font-size: 62.5%;
+}
+
 body, input, select, textarea {
 	font-family: 'PT Sans','Helvetica Neue','Arial',Sans-Serif;
-	font-size: 1em;
+	font-size: 2em;
 	font-weight: 400;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	vertical-align: baseline;
 	color: #595959;
 }
@@ -90,27 +30,27 @@ body, input, select, textarea {
 h1, h2, h3, h4, h5, h6, h7 {
 	font-family: 'Roboto Slab', 'PT Sans','Helvetica Neue','Arial',Sans-Serif;
 	font-weight: 400;
-	line-height: 1.25em;
-	margin: 1.5em 0;
+	line-height: 1.6em;
+	margin: 1.6em 0;
 	color: #404040;
 	
 	text-align: center;
 }
 
 h1 {
-	font-size: 1.875em;
+	font-size: 1.6em;
 }
 h2 {
-	font-size: 1.75em;
+	font-size: 1.4em;
 }
 h3 {
-	font-size: 1.625em;
+	font-size: 1.2em;
 }
 h4 {
-	font-size: 1.25em;
+	font-size: 1.1em;
 }
 h5 {
-	font-size: 1.125em;
+	font-size: 1em;
 }
 h6 {
 	font-size: 1em;
@@ -123,7 +63,7 @@ img {
 }
 
 p {
-	margin: 1.5em 0;
+	margin: 1.6em 0;
 }
 
 code {
@@ -142,10 +82,9 @@ code {
 .button,
 .button:active,
 .button:visited {
-	font-size: 1.5em;
 	position: relative;
 	display: block;
-	padding: 1em 2.125em 1em 1em;
+	padding: 1em 1.6em 1em 1em;
 	margin: 1em 0;
 	
 	color: #fff;
@@ -155,20 +94,20 @@ code {
 	border-radius: 0.25em 0.5em 0.5em 0.25em;
 }
 .arrow {
-	margin: 1em 1.5em 1em 0;
+	margin: 1em 1.6em 1em 0;
 }
 .arrow.button {
 	background: #404040;
 }
 .arrow:before {
-	width: 2.25em;
-	height: 2.25em;
+	width: 2.8em;
+	height: 2.8em;
 	position: absolute;
-	right: -0.75em;
+	right: -1em;
 	top: 50%;
 	content: '';
 	display: block;
-	margin: -1.125em 0 0;
+	margin: -1.4em 0 0;
 	background: #3dcc9c;
 
 	-webkit-border-radius: 0.5em 0.25em 0.5em 0.25em;
@@ -305,14 +244,16 @@ code {
 .title, .title-border, .title-sub {
 	display: block;
 	text-align: center;
-	margin: 1em;
+	margin: 0.625em;
 }
 
 h1.title {
 	font-size: 4em;
+	margin: 0.5em;
 }
 h2.title {
 	font-size: 3em;
+	margin: 0.5em;
 }
 h3.title {
 	font-size: 2em;
