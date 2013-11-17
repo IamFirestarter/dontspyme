@@ -59,7 +59,9 @@ h5 {
 h6 {
 	font-size: 1em;
 }
-
+a {
+	text-decoration: none;
+}
 img {
 	max-width: 100%;
 	height: auto;
@@ -79,6 +81,12 @@ code {
 	
 	-webkit-border-radius: 0.25em;
 	border-radius: 0.25em;
+}
+
+.image-small,
+.image-medium,
+.image-large {
+	display: block;
 }
 
 
@@ -275,6 +283,8 @@ h3.title {
 	color: #808080;
 	width: 62.5%;
 	margin: 0 auto 1em;
+	font-size: 0.8em;
+	line-height: 1.4em;
 }
 
 .pre-head {
@@ -497,6 +507,9 @@ body {}
 	
 	.title-sub {
 		width: auto;
+	}
+	.image-small {
+		max-width: 50%;
 	}
 }
 
