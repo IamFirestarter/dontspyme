@@ -251,6 +251,10 @@ h3.title {
 	text-transform: uppercase;
 }
 
+.article {
+	margin-bottom: 4em;
+}
+
 
 
 #header .title {
@@ -308,20 +312,6 @@ h3.title {
 .icon i {
 	font-size: 2em;
 }
-/*
-.icon.icon-mail {
-	background-image: url('images/icon-mail.png');
-}
-.icon.icon-message {
-	background-image: url('images/icon-message.png');
-}
-.icon.icon-browser {
-	background-image: url('images/icon-browser.png');
-}
-.icon.icon-harddrive {
-	background-image: url('images/icon-harddrive.png');
-}
-*/
 .icon:hover i,
 .icon:focus i {
 	-webkit-animation: infinite iconsize 1s;
