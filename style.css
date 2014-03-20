@@ -295,16 +295,20 @@ h3.title {
 .icon {
 	display: block;
 	margin: 1em auto;
-	height: 0;
-	padding-bottom: 75%;
+	padding: 25% 0;
 	
 	text-align: center;
 	
 	-webkit-border-radius: 0.3em;
 	border-radius: 0.3em;
 	
-	background: #3dcc9c no-repeat scroll center center / 50%;
+	background: #3dcc9c;
+	color: #fff;
 }
+.icon i {
+	font-size: 2em;
+}
+/*
 .icon.icon-mail {
 	background-image: url('images/icon-mail.png');
 }
@@ -317,20 +321,21 @@ h3.title {
 .icon.icon-harddrive {
 	background-image: url('images/icon-harddrive.png');
 }
-.icon:hover,
-.icon:focus {
-	-webkit-animation: infinite iconsize 2s;
-	animation: infinite iconsize 2s;
+*/
+.icon:hover i,
+.icon:focus i {
+	-webkit-animation: infinite iconsize 1s;
+	animation: infinite iconsize 1s;
 }
 
 @-webkit-keyframes iconsize {
 	50% {
-		background-size: 55%;
+		-webkit-transform: scale(1.25);
 	}
 } 
 @keyframes iconsize {
 	50% {
-		background-size: 55%;
+		transform: scale(1.25);
 	}
 }
 
