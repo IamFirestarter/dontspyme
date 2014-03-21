@@ -97,6 +97,26 @@ code {
 }
 
 
+.download {
+	font-size: 1em;
+	line-height: 1.6em;
+	
+	border: 1px solid #3dcc9c;
+	
+	-webkit-border-radius: 10em;
+	border-radius: 10em;
+	margin: auto;
+	padding: 0.5em 1em;
+	display: inline-block;
+	text-align: center;
+}
+.download:hover,
+.download:focus {
+	background: #3dcc9c;
+	color: #fff;
+}
+
+
 .arrow,
 .button,
 .button:active,
@@ -258,6 +278,10 @@ h3.title {
 
 .article {
 	margin-bottom: 4em;
+}
+.app-icon {
+	max-width: 128px;
+	margin: auto;
 }
 
 
